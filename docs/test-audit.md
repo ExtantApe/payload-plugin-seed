@@ -2,6 +2,12 @@
 
 Newest first.
 
+## 2026-11-26: 14-day check
+
+- Changes since 2026-11-11: the 0.4.1 release (0d6db40), EXTANT APE named as the copyright holder (f61dd8b, e991a82), the move to `@extantape` (e9951c1, which changes the package name in the two admin component paths in `src/plugin.ts`), and two docs edits (4eda81b, b0a9936). Nothing in `test/` changed.
+- Behavior unchanged; the suite passes (99 tests, the integration file against a throwaway MongoDB 7.0 container through `MONGODB_URL`), and so does the typecheck.
+- Gaps: none new. The two component paths were read against `package.json` and match the new name. No test pins those paths.
+
 ## 2026-11-11: only an exact `true` from `allow()` and `access`
 
 Suite: 94 tests before, 99 after (`npx vitest run`, with the local MongoDB test container on 127.0.0.1:27018 for the integration file). From an access sweep.
